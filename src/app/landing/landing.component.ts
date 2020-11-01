@@ -23,7 +23,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    jQuery.getScript('../../assets/js/active.js')
+    //jQuery.getScript('../../assets/js/active.js')
     this.sermons = SermonCollection.sermons.slice(0,3);
   }
 }

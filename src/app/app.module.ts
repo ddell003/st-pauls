@@ -7,6 +7,16 @@ import { SermonsComponent } from './sermons/sermons.component';
 import { NavagationComponent } from './navagation/navagation.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { StaffComponent } from './staff/staff.component';
+import { MinistriesComponent } from './ministries/ministries.component';
+import { PreschoolComponent } from './ministries/preschool/preschool.component';
+import { MenComponent } from './ministries/men/men.component';
+import { ServeComponent } from './ministries/serve/serve.component';
+import { ConnectComponent } from './connect/connect.component';
+import { ConnectItemComponent } from './connect/connect-item/connect-item.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +24,17 @@ import { LandingComponent } from './landing/landing.component';
     SermonsComponent,
     NavagationComponent,
     FooterComponent,
-    LandingComponent
+    LandingComponent,
+    AboutComponent,
+    ContactComponent,
+    StaffComponent,
+    MinistriesComponent,
+    PreschoolComponent,
+    MenComponent,
+    ServeComponent,
+    ConnectComponent,
+    ConnectItemComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
