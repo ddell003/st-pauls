@@ -5,6 +5,7 @@ import { SermonsComponent } from './sermons/sermons.component';
 
 const routes: Routes = [
   { path: 'sermons', component: SermonsComponent},
+  { path: 'services', component: SermonsComponent},
   { path: '', component: LandingComponent},
 ];
 
