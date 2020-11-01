@@ -22,7 +22,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects.txt"
+              "src/assets/_redirects.txt"
             ],
             "styles": [
               "src/styles.css"
