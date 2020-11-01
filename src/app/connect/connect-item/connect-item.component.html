@@ -1,0 +1,40 @@
+<style>
+    .bulletList {
+        list-style: circle;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    .connect-title:first-letter {
+    text-transform:capitalize;
+}
+</style>
+<div class="breadcumb-area bg-img" style="background-image: url('../../../assets/img/connect.jpeg');">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-12">
+                <div class="breadcumb-text">
+                    <h2 class="connect-title">Connect - {{title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ministries-area section-padding-100-0">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-3 single-ministry mb-100">
+                <img src="{{photo}}" alt="">
+            </div>
+
+            <div class="col-12 col-md-9 single-ministry mb-100" [innerHTML]="text">
+                
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
