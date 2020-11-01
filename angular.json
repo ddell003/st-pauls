@@ -21,7 +21,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
@@ -123,6 +124,14 @@
             "production": {
               "devServerTarget": "st-pauls:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/st-pauls",
+            "netlifyToken": "",
+            "siteId": "b5261d9a-05f1-4208-a70e-edf7898b4d2d"
           }
         }
       }
