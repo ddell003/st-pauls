@@ -24,6 +24,16 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
     //jQuery.getScript('../../assets/js/active.js')
-    this.sermons = SermonCollection.sermons.slice(0,3);
+    this.sermons = SermonCollection.sermons.slice(0,12);
+    
   }
+
+  facebookUrl(sermon: Sermon){
+    return "https://www.facebook.com/video.php?v="+sermon.id
+  }
+
+  urlEncodeFb(sermon: Sermon){
+    return encodeURI("https://www.facebook.com/video.php?v="+sermon.id)
+  }
+
 }

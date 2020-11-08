@@ -17,6 +17,7 @@ import { ServeComponent } from './ministries/serve/serve.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ConnectItemComponent } from './connect/connect-item/connect-item.component';
 import { LibraryComponent } from './library/library.component';
+import { FbVideoComponent } from './fb-video/fb-video.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LibraryComponent } from './library/library.component';
     ServeComponent,
     ConnectComponent,
     ConnectItemComponent,
-    LibraryComponent
+    LibraryComponent,
+    FbVideoComponent
   ],
   imports: [
     BrowserModule,
