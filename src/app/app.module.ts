@@ -18,6 +18,7 @@ import { ConnectComponent } from './connect/connect.component';
 import { ConnectItemComponent } from './connect/connect-item/connect-item.component';
 import { LibraryComponent } from './library/library.component';
 import { FbVideoComponent } from './fb-video/fb-video.component';
+import { YouthComponent } from './ministries/youth/youth.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FbVideoComponent } from './fb-video/fb-video.component';
     ConnectComponent,
     ConnectItemComponent,
     LibraryComponent,
-    FbVideoComponent
+    FbVideoComponent,
+    YouthComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { MenComponent } from './ministries/men/men.component';
 import { MinistriesComponent } from './ministries/ministries.component';
 import { PreschoolComponent } from './ministries/preschool/preschool.component';
 import { ServeComponent } from './ministries/serve/serve.component';
+import { YouthComponent } from './ministries/youth/youth.component';
 import { SermonsComponent } from './sermons/sermons.component';
 import { StaffComponent } from './staff/staff.component';
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'staff', component: StaffComponent},
   { path: 'ministries', component: MinistriesComponent},
   { path: 'ministries/preschool', component: PreschoolComponent},
+  { path: 'ministries/youth', component: YouthComponent},
   { path: 'ministries/men', component: MenComponent},
   { path: 'ministries/serve', component: ServeComponent},
   { path: 'connect', component: ConnectComponent},
