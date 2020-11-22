@@ -41,25 +41,38 @@ export class NativityComponent implements OnInit {
     new Station(
       4,
       "The Manger",
-      ["some text"],
+      [
+        "...so we continue in the scripture, Luke, Chapter 2",
+        "5 To be taxed with Mary, his espoused wife, being great with child. 6 And so it was, that, while they were there, the time came for the baby to be born. 7 And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn.",
+    ],
       "manger.jpg"
     ),
     new Station(
       5,
       "Shepherds and Angels",
-      ["some text"],
+      [
+        " 8 And there were in the same country shepherds abiding in the field, keeping watch over their flock by night. 9 And, lo, the angel of the Lord came upon them, and the glory of the Lord shone round about them: and they were sore afraid. 10 And the angel said unto them………",
+        "\“Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.  For unto you is born this day in the city of David a Saviour, which is Christ the Lord. And this shall be a sign unto you; Ye shall find the babe wrapped in swaddling clothes, lying in a manger.\”",
+        "13 And suddenly there was with the angel a multitude of the heavenly host praising God, and saying….. ",
+        "Glory to God in the highest, and on earth peace, good will toward men.",
+        "  The angels left and went up to heaven. The shepherds wondered what they should do next. They decided the best thing was to go to Bethlehem to see what had happened. So they hurried off to seek Mary and Joseph and the baby."
+      ],
       "shepherds.jpg"
     ),
     new Station(
       6,
       "The Wisemen",
-      ["some text"],
+      [
+        "Now when Jesus was born in Bethlehem of Judæa in the days of Herod the king, behold, there came wise men from the east to Jerusalem, 2 Saying, “ Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.” 3 When Herod the king had heard these things, he was troubled….7 Then Herod, when he had privily called the wise men, inquired of them diligently what time the star appeared. 8 And he sent them to Bethlehem, and said, “Go and search diligently for the young child; and when ye have found him, bring me word again, that I may come and worship him also.” 9 When they had heard the king, they departed; and, lo, the star, which they saw in the east, went before them, till it came and stood over where the young child was. 10 When they saw the star, they rejoiced with exceedingly great joy. 11 ¶And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him: and when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh."
+      ],
       "wisemen.jpeg"
     ),
     new Station(
       7,
       "Joy to the World",
-      ["some text"],
+      [
+        "Thank you for spending time with us this afternoon celebrating God’s gift to us all. We would love for you to worship with us on Sunday mornings at 10:00AM. For any questions, please call 886-2317 and Merry Christmas!"
+      ],
       "joy.jpg"
     ),
   ];
@@ -68,7 +81,7 @@ export class NativityComponent implements OnInit {
 
   next(){
     let id = this.current.id + 1;
-    if(id == this.stations.length){
+    if(id > this.stations.length){
       id = 1;
     }console.log("setting id");
 
