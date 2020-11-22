@@ -12,11 +12,13 @@ import { MinistriesComponent } from './ministries/ministries.component';
 import { PreschoolComponent } from './ministries/preschool/preschool.component';
 import { ServeComponent } from './ministries/serve/serve.component';
 import { YouthComponent } from './ministries/youth/youth.component';
+import { NativityComponent } from './nativity/nativity.component';
 import { SermonsComponent } from './sermons/sermons.component';
 import { StaffComponent } from './staff/staff.component';
 
 const routes: Routes = [
   { path: 'sermons', component: SermonsComponent},
+  { path: 'nativity', component: NativityComponent},
   { path: 'about', component: AboutComponent},
   { path: 'library', component: LibraryComponent},
   { path: '', component: LandingComponent},
