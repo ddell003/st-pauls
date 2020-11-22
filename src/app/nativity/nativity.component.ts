@@ -73,6 +73,13 @@ export class NativityComponent implements OnInit {
     }console.log("setting id");
 
     this.current = this.stations[id - 1];
+    this.scrollToCurrent();
+    
+  }
+
+  scrollToCurrent(){
+    let el = document.getElementById("current");
+    el.scrollIntoView();
   }
 
   setCurrent(id){
