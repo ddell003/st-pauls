@@ -16,14 +16,20 @@
             <div class="card-body">
               <h5 class="card-title">{{current.title}}</h5>
               <p class="card-text" *ngFor="let description of current.description">{{description}}</p>
-              <p class="card-text"><small class="text-muted">Station {{current.id}}</small></p>
-              <a href="#" class="btn btn-primary" (click)="next()">Next Station</a>
+              <p class="card-text"><small class="text-muted">Station {{current.id}} of {{stations.length}}</small></p>
+              <a class="btn btn-primary pull-left" (click)="previous()" *ngIf="current.id != 1"> &#x3c; Previous Station</a>
+              <a class="btn btn-primary pull-right" (click)="next()">Next Station &#x3e;</a>
             </div>
         </div>
+        <hr style="border: 1px solid red;">
         <div class="row">
-            <div class="col-lg-4 col-sm-12"  *ngFor="let station of stations">
-                <div class="card">
-                    <img class="card-img-top" src="../../assets/img/{{station.image}}" alt="Card image cap">
+            <div class="col-sm-12">
+                <h4>The Stations</h4>
+            </div>
+            
+            <div class="col-lg-4 col-sm-12"  *ngFor="let station of stations" style="margin-top:5px;">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../../assets/img/{{station.image}}" alt="Card image cap" style="height: 230px;">
                     <div class="card-body">
                         <h5 class="card-title">{{station.title}}</h5>
                         <p class="card-text"><small class="text-muted">Station {{station.id}}</small><a (click)="setCurrent(station.id)" class="btn btn-primary pull-right">Open</a></p>
@@ -32,6 +38,7 @@
                 </div>
             </div>
         </div>  
+        <br><br>
     </div>
   </section>
 

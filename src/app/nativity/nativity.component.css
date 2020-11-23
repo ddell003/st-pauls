@@ -13,3 +13,6 @@
     content: '';
     position: absolute;
     z-index: -5; }
+.btn-primary{
+    color:white!important;
+}

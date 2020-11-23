@@ -22,3 +22,8 @@
 .darkbg {
     background-color: #f6f6f6;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 325px;
+    }

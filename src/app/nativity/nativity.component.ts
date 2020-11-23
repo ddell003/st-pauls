@@ -90,6 +90,20 @@ export class NativityComponent implements OnInit {
     
   }
 
+  previous(){
+    let id = this.current.id - 1;
+    if(id > this.stations.length){
+      id = 1;
+    }
+    else if(id === 0){
+      id = this.stations.length;
+    }
+
+    this.current = this.stations[id - 1];
+    this.scrollToCurrent();
+    
+  }
+
   scrollToCurrent(){
     let el = document.getElementById("current");
     el.scrollIntoView();
@@ -97,6 +111,7 @@ export class NativityComponent implements OnInit {
 
   setCurrent(id){
     this.current = this.stations[id - 1];
+    this.scrollToCurrent();
   }
 
   ngOnInit(): void {
