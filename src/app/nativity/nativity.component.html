@@ -21,8 +21,8 @@
 
               
             <div *ngIf="current.id === 1 && ! start">
-                <p>Welcome to St. Paul's United Methodist Journey to Bethlehem. As you participate with us today, please enjoy our audio narrative. If journey us for the drive through narrative, we have provided slides for each station. Please enjoy!</p>
-                <a class="btn btn-primary pull-right" (click)="start = true">Start Journey &#x3e;</a>
+                <p>Welcome to St. Paul's United Methodist Journey to Bethlehem. As you participate with us today, please enjoy our audio narrative. If joining us for the drive through narrative, we have provided slides for each station. Please enjoy!</p>
+                <a class="btn  btn-lg btn-primary" (click)="start = true">Start Journey &#9658;</a>
             </div>
             <div *ngIf="start">
                 <audio *ngIf="current.id === 1" controls id="{{current.id}}"><source src="../../assets/audio/Station 1.mp3" type="audio/ogg"></audio>
@@ -40,7 +40,7 @@
             </div>
         </div>
         <hr style="border: 1px solid red;">
-        <div class="row">
+        <div *ngIf="current.id == 7" class="row">
             <div class="col-sm-12">
                 <h4>The Stations</h4>
             </div>
