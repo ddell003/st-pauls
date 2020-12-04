@@ -12,13 +12,31 @@
 <section class="faith-about-area section-padding-100-0 darkbg">
     <div class="container">
         <div class="card mb-3 current-station" id="current">
-            <img class="card-img-top" src="../../assets/img/{{current.image}}" alt="Card image cap">
+            <img *ngIf="! start" class="card-img-top" src="../../assets/img/welcome.jpg" alt="Card image cap">
+            <img  *ngIf="start"class="card-img-top" src="../../assets/img/{{current.image}}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">{{current.title}}</h5>
+              <!--<a class="btn btn-primary pull-right" (click)="playAudio(current.audio)">playAudio &#x3e;</a>-->
+              
+
+              
+            <div *ngIf="current.id === 1 && ! start">
+                <p>Welcome to St. Paul's United Methodist Journey to Bethlehem. As you participate with us today, please enjoy our audio narrative. If journey us for the drive through narrative, we have provided slides for each station. Please enjoy!</p>
+                <a class="btn btn-primary pull-right" (click)="start = true">Start Journey &#x3e;</a>
+            </div>
+            <div *ngIf="start">
+                <audio *ngIf="current.id === 1" controls id="{{current.id}}"><source src="../../assets/audio/Station 1.mp3" type="audio/ogg"></audio>
+                <audio *ngIf="current.id === 2" controls id="{{current.id}}"><source src="../../assets/audio/Station 2.mp3" type="audio/ogg"></audio>
+                <audio *ngIf="current.id === 3" controls id="{{current.id}}"><source src="../../assets/audio/Station 3.mp3" type="audio/ogg"></audio>
+                <audio *ngIf="current.id === 4" controls id="{{current.id}}"><source src="../../assets/audio/Station 4.mp3" type="audio/ogg"></audio>
+                <audio *ngIf="current.id === 5" controls id="{{current.id}}"><source src="../../assets/audio/Station 5.mp3" type="audio/ogg"></audio>
+                <audio *ngIf="current.id === 6" controls id="{{current.id}}"><source src="../../assets/audio/Station 6.mp3" type="audio/ogg"></audio>
+            
               <p class="card-text" *ngFor="let description of current.description">{{description}}</p>
               <p class="card-text"><small class="text-muted">Station {{current.id}} of {{stations.length}}</small></p>
               <a class="btn btn-primary pull-left" (click)="previous()" *ngIf="current.id != 1"> &#x3c; Previous Station</a>
               <a class="btn btn-primary pull-right" (click)="next()">Next Station &#x3e;</a>
+            </div>
             </div>
         </div>
         <hr style="border: 1px solid red;">

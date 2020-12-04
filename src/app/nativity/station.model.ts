@@ -4,6 +4,7 @@ export class Station {
         public title:string,
         public description:Array<string>,
         public image:string,
+        public audio:string,
     ){}
 
 }

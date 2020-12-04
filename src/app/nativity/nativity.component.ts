@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Station } from './station.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nativity',
@@ -19,7 +20,8 @@ export class NativityComponent implements OnInit {
        "God sent an angel down from heaven with a message for Mary. The angel told Mary that she was very special and that God is with her. The angel told her not to be afraid. She will give birth to a son. She is to call him Jesus, and he will be called the Son of the Most high"
        
     ],
-      "camels.png"
+      "camels.png",
+      'Station 1.mp3'
     ),
     new Station(
       2,
@@ -28,15 +30,17 @@ export class NativityComponent implements OnInit {
         "….so we read in the Bible, the book of Luke, Chapter 2",
         "1 And it came to pass in those days, that there went out a decree from Cæsar Augustus, that all the world should be taxed. 3 And all went to be taxed, every one into his own city. 4 And Joseph also went up from Galilee, out of the city of Nazareth, into Judæa, unto the city of David, which is called Bethlehem; (because he was of the house and lineage of David:)"
     ],
-      "walk.jpg"
+      "walk.jpg",
+      'Station 2.mp3'
     ),
     new Station(
       3,
-      "Little Town of Bethleham",
+      "Little Town of Bethlehem",
       [
         "Joseph went there to register with Mary, who was pledged to be married to him and was expecting a child. During the journey, Mary was very nearly ready to give birth to her baby. Although tired and weary, Mary and Joseph travelled for many miles. When they arrived in Bethlehem, they knocked on every door in the town, looking for a place to stay--but everywhere was full of people. Each time they were given the same answer. Lots of people had come down to be counted, so the whole town was full."
       ],
-      "little.jpeg"
+      "little.jpeg",
+      'Station 3.mp3'
     ),
     new Station(
       4,
@@ -45,7 +49,8 @@ export class NativityComponent implements OnInit {
         "...so we continue in the scripture, Luke, Chapter 2",
         "5 To be taxed with Mary, his espoused wife, being great with child. 6 And so it was, that, while they were there, the time came for the baby to be born. 7 And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn.",
     ],
-      "manger.jpg"
+      "manger.jpg",
+      'Station 4.mp3'
     ),
     new Station(
       5,
@@ -57,7 +62,8 @@ export class NativityComponent implements OnInit {
         "Glory to God in the highest, and on earth peace, good will toward men.",
         "  The angels left and went up to heaven. The shepherds wondered what they should do next. They decided the best thing was to go to Bethlehem to see what had happened. So they hurried off to seek Mary and Joseph and the baby."
       ],
-      "shepherds.jpg"
+      "shepherds.jpg",
+      'Station 5.mp3'
     ),
     new Station(
       6,
@@ -65,7 +71,8 @@ export class NativityComponent implements OnInit {
       [
         "Now when Jesus was born in Bethlehem of Judæa in the days of Herod the king, behold, there came wise men from the east to Jerusalem, 2 Saying, “ Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.” 3 When Herod the king had heard these things, he was troubled….7 Then Herod, when he had privily called the wise men, inquired of them diligently what time the star appeared. 8 And he sent them to Bethlehem, and said, “Go and search diligently for the young child; and when ye have found him, bring me word again, that I may come and worship him also.” 9 When they had heard the king, they departed; and, lo, the star, which they saw in the east, went before them, till it came and stood over where the young child was. 10 When they saw the star, they rejoiced with exceedingly great joy. 11 ¶And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him: and when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh."
       ],
-      "wisemen.jpeg"
+      "wisemen.jpeg",
+      'Station 6.mp3'
     ),
     new Station(
       7,
@@ -73,11 +80,13 @@ export class NativityComponent implements OnInit {
       [
         "Thank you for spending time with us this afternoon celebrating God’s gift to us all. We would love for you to worship with us on Sunday mornings at 10:00AM. For any questions, please call 886-2317 and Merry Christmas!"
       ],
-      "joy.jpg"
+      "joy.jpg",
+      'Station 6.mp3'
     ),
   ];
 
   current:Station = this.stations[0];
+  start = false;
 
   next(){
     let id = this.current.id + 1;
@@ -112,6 +121,31 @@ export class NativityComponent implements OnInit {
   setCurrent(id){
     this.current = this.stations[id - 1];
     this.scrollToCurrent();
+  }
+
+  /*@ViewChild('audioOption') audioPlayerRef: ElementRef;
+  onAudioPlay(){
+    console.log('in player child')
+    //this.audioPlayerRef.nativeElement.src();
+    let sound = "../../assets/audio/"+this.current.audio;
+    ( new Audio(sound) ).play()
+  }*/
+  /*@ViewChild('audioOption')
+  set audio(v){
+      v.src = "../../assets/audio/"+this.current.audio;
+      console.log('setting audioOption', v);
+  }
+  onAudioPlay(){
+    console.log('in player child')
+    //this.audioPlayerRef.nativeElement.src();
+    let sound = "../../assets/audio/"+this.current.audio;
+    ( new Audio(sound) ).play()
+  }*/
+
+  playAudio(path){
+    console.log('in player')
+    let sound = "../../assets/audio/"+path;
+    ( new Audio(sound) ).play()
   }
 
   ngOnInit(): void {
