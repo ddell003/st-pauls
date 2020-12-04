@@ -16,6 +16,8 @@ export class LandingComponent implements OnInit {
 
   constructor() { }
 
+  nativityDate = false
+
   sermons:any = [];
 
   url(url:string){
@@ -25,6 +27,17 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
     //jQuery.getScript('../../assets/js/active.js')
     this.sermons = SermonCollection.sermons.slice(0,12);
+
+      // Create date from input value
+      var inputDate = new Date("12/6/2020");
+
+      // Get today's date
+      var todaysDate = new Date();
+
+      // call setHours to take the time out of the comparison
+      if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+        this.nativityDate = true;
+      }
     
   }
 

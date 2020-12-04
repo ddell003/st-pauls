@@ -1,5 +1,39 @@
+<section class="hero-area" *ngIf="nativityDate">
+    <div class="hero-slides owl-carousel">
+
+        <div class="single-hero-slide bg-img" style="background-image: url(../../assets/img/startNativity.jpg);">
+            <div class="container h-100">
+                <div class="row h-75 align-items-center">
+                    <div class="col-12 col-lg-12">
+                        <!-- Slides Content -->
+                        <div class="hero-slides-content text-center">
+                        
+                            <h2 style="font-size: 45px">Journey to Bethlehem</h2>
+                            <h3>December 6, 2020 2-4pm @ St. Paul's UMC</h3>
+                            <h6 style="color:white">Come join us anytime between 2-4pm on December 6 for a free drive through live nativity with an online narative. We will also have live animals for viewing as well! Perfect for all ages!</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Event Button -->
+            <div class="next-event-btn" style="top: 65%">
+                <div class="container">
+                <!-- #E0A942, -->
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a href="{{ url('/nativity') }}" class="btn faith-btn active" style="font-size:32px; color: black; background-color: #FFFFFF;">Start Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
+
         <!-- Single Hero Slide -->
         <div class="single-hero-slide bg-img" style="background-image: url(../../assets/img/bg-img/church.jpg);">
             <div class="container h-100">
