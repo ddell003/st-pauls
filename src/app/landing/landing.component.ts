@@ -28,7 +28,7 @@ export class LandingComponent implements OnInit {
     //jQuery.getScript('../../assets/js/active.js')
     this.sermons = SermonCollection.sermons.slice(0,12);
 
-      // Create date from input value
+     /* // Create date from input value
       var inputDate = new Date("12/6/2020");
 
       // Get today's date
@@ -37,7 +37,7 @@ export class LandingComponent implements OnInit {
       // call setHours to take the time out of the comparison
       if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
         this.nativityDate = true;
-      }
+      }*/
     
   }
 
