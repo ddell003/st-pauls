@@ -31,6 +31,8 @@ const routes: Routes = [
   { path: 'ministries/serve', component: ServeComponent},
   { path: 'connect', component: ConnectComponent},
   { path: 'connect/:slug', component: ConnectItemComponent},
+  //make a 404 page not found
+  { path: '**', component: LandingComponent},
   
 
 ];
