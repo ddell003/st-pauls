@@ -4,6 +4,8 @@ export class SermonCollection{
     public static sermons:Sermon[] = [
     
         //236636357834983
+        new Sermon(2843208045962386, 'I\ll Do It Tomorrow','<small>Part 1 - </small>By Rev Ryan Oswald','3 January, 2021'),
+
         new Sermon(236636357834983, 'To the Future','By Rev Ryan Oswald','28 December, 2020'),
         new Sermon(207308514377633, 'Christmas Eve Service','By Rev Ryan Oswald','24 December, 2020'),
         new Sermon(390122292242285, 'Behold The Savior Comes','<small>Part 4 - </small>By Rev Ryan Oswald','20 December, 2020'),
