@@ -3,7 +3,9 @@ import { Sermon } from './Sermon.model';
 export class SermonCollection{
     public static sermons:Sermon[] = [
 
-        //
+        //444719816683444
+        new Sermon(444719816683444, 'All Things New','<small>Part 1 - </small>By Rev Ryan Oswald','31 January, 2021'),
+
         new Sermon(1715396501955868, 'I\ll Do It Tomorrow','<small>Part 4 - </small>By Rev Ryan Oswald','24 January, 2021'),
         new Sermon(502849164018845, 'I\ll Do It Tomorrow','<small>Part 3 - </small>By Rev Ryan Oswald','17 January, 2021'),
         new Sermon(2888839811349661, 'I\ll Do It Tomorrow','<small>Part 2 - </small>By Rev Ryan Oswald','10 January, 2021'),
