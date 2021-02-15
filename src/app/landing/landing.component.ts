@@ -11,7 +11,7 @@ declare  var jQuery:  any;
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
- 
+
 export class LandingComponent implements OnInit {
 
   constructor() { }
@@ -19,9 +19,14 @@ export class LandingComponent implements OnInit {
   nativityDate = false
 
   sermons:any = [];
+  urlPath = "https://www.facebook.com/video.php?v=";
 
   url(url:string){
     return url;
+  }
+
+  videoUrl(id:string){
+    return this.urlPath+id;
   }
 
   ngOnInit(): void {
@@ -38,7 +43,7 @@ export class LandingComponent implements OnInit {
       if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
         this.nativityDate = true;
       }*/
-    
+
   }
 
   facebookUrl(sermon: Sermon){
