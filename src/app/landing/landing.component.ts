@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 import '../../assets/js/active.js';
 import { Sermon } from '../sermons/Sermon.model.js';
 import { SermonCollection } from '../sermons/Sermons.collection.js';
+import { Video } from '../sermons/video.model.js';
+import { FacebookService } from '../services/facebook.service.js';
+import * as moment from 'moment';
 
 declare  var jQuery:  any;
 
@@ -12,13 +16,16 @@ declare  var jQuery:  any;
   styleUrls: ['./landing.component.css']
 })
 
-export class LandingComponent implements OnInit {
+export class LandingComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  private videoSubscription: Subscription;
+
+  constructor(private facebookservice: FacebookService) { }
 
   nativityDate = false
 
   sermons:any = [];
+  videos:Video[] = [];
   urlPath = "https://www.facebook.com/video.php?v=";
 
   url(url:string){
@@ -28,10 +35,19 @@ export class LandingComponent implements OnInit {
   videoUrl(id:string){
     return this.urlPath+id;
   }
+  formatDate(date:string){
+    return moment(date).format('MMMM Do YYYY');
+  }
 
   ngOnInit(): void {
     //jQuery.getScript('../../assets/js/active.js')
     this.sermons = SermonCollection.sermons.slice(0,12);
+    this.facebookservice.getVideos();
+    this.videoSubscription = this.facebookservice.getVideoListener()
+    .subscribe((videos:Video[])=>{
+        console.log("videos", videos)
+        this.videos = videos;
+    });
 
      /* // Create date from input value
       var inputDate = new Date("12/6/2020");
@@ -46,12 +62,8 @@ export class LandingComponent implements OnInit {
 
   }
 
-  facebookUrl(sermon: Sermon){
-    return "https://www.facebook.com/video.php?v="+sermon.id
-  }
-
-  urlEncodeFb(sermon: Sermon){
-    return encodeURI("https://www.facebook.com/video.php?v="+sermon.id)
+  ngOnDestroy(): void {
+    this.videoSubscription.unsubscribe();
   }
 
 }

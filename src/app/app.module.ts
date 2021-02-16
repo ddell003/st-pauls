@@ -20,6 +20,7 @@ import { LibraryComponent } from './library/library.component';
 import { FbVideoComponent } from './fb-video/fb-video.component';
 import { YouthComponent } from './ministries/youth/youth.component';
 import { NativityComponent } from './nativity/nativity.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { NativityComponent } from './nativity/nativity.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
