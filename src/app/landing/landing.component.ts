@@ -35,6 +35,9 @@ export class LandingComponent implements OnInit, OnDestroy {
   videoUrl(id:string){
     return this.urlPath+id;
   }
+  videoQuery(id){
+    return "allowfullscreen=true&app_id=420275702288338&container_width=1110&href=https%3A%2F%2Fwww.facebook.com%2Fvideo.php%3Fv%3D"+id+"&locale=en_US&sdk=joey&width=500"
+  }
   formatDate(date:string){
     return moment(date).format('MMMM Do YYYY');
   }
