@@ -1,0 +1,50 @@
+<div class="latest-sermons mb-100">
+  <div class="headline">
+      <h2 class="">Latest Sermons</h2>
+      <hr style="background-color:#ff0024">
+  </div>
+  <div class="sermonContainer">
+  <div class="fb-video"
+  [attr.data-href]="videoUrl(videos[0].id)"
+  data-width="500"
+  data-allowfullscreen="true"></div>
+
+  <div class="fb-video"
+  data-href="https://www.facebook.com/video.php?v=2843208045962386"
+  data-width="500"
+  class="hidden"
+  data-allowfullscreen="true"></div>
+
+  <div class="row" *ngIf="videos.length > 0">
+
+      <div class="single-sermons col-lg-4 col-sm-12" *ngFor="let sermon of videos">
+
+          <div class="sermons-audio-player d-flex align-items-center">
+              <div class="clearfix"></div>
+              <br>
+          </div>
+          <div class="sermons-content d-flex align-items-center">
+              <!-- Sermons Thumbnail -->
+              <!-- Sermons Content -->
+              <div class="sermons-text col-lg-10">
+                  <a href="https://www.facebook.com/stpaulsumcstaunton/videos/{{sermon.id}}/" target="_blank">
+                      <h6>{{sermon.title}}
+
+                        <!--All Things New','<small>Part 3 - </small>By Rev Ryan Oswald','4 February, 2021-->
+                      </h6>
+
+                  </a>
+                  <p><span *ngIf="sermon.part"> Part {{sermon.part}}</span> By {{sermon.speaker}}</p>
+                  <p class="date">{{formatDate(sermon.date)}}</p>
+              </div>
+              <div class="col-lg-2">
+                  <a class="btn btn-info btn-sm" href="https://www.facebook.com/stpaulsumcstaunton/videos/{{sermon.id}}/" target="_blank"> <i class="fa fa-play pull-right"></i></a>
+              </div>
+
+          </div>
+      </div>
+
+      <a  href="https://www.facebook.com/stpaulsumcstaunton/videos/?ref=page_internal" class="btn faith-btn blue-outline-btn">MORE...</a>
+  </div>
+</div>
+</div>

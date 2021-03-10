@@ -21,6 +21,8 @@ import { FbVideoComponent } from './fb-video/fb-video.component';
 import { YouthComponent } from './ministries/youth/youth.component';
 import { NativityComponent } from './nativity/nativity.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EventsComponent } from './events/events.component';
+import { FacebookSermonsComponent } from './facebook-sermons/facebook-sermons.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { HttpClientModule } from '@angular/common/http';
     LibraryComponent,
     FbVideoComponent,
     YouthComponent,
-    NativityComponent
+    NativityComponent,
+    EventsComponent,
+    FacebookSermonsComponent
   ],
   imports: [
     BrowserModule,

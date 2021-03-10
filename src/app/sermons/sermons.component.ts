@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { FacebookService } from '../services/facebook.service';
 
 @Component({
   selector: 'app-sermons',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SermonsComponent implements OnInit {
 
-  constructor() { }
+  private videoSubscription: Subscription;
+
+  constructor(private facebookservice: FacebookService) { }
 
   ngOnInit(): void {
+
   }
 
 }
