@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ConnectItemComponent } from './connect/connect-item/connect-item.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ContactComponent } from './contact/contact.component';
+import { EasterComponent } from './events/easter/easter.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { LibraryComponent } from './library/library.component';
@@ -19,6 +20,7 @@ import { StaffComponent } from './staff/staff.component';
 const routes: Routes = [
   { path: 'sermons', component: SermonsComponent},
   { path: 'nativity', component: NativityComponent},
+  { path: 'easter', component: EasterComponent},
   { path: 'about', component: AboutComponent},
   { path: 'library', component: LibraryComponent},
   { path: '', component: LandingComponent},
@@ -33,7 +35,7 @@ const routes: Routes = [
   { path: 'connect/:slug', component: ConnectItemComponent},
   //make a 404 page not found
   { path: '**', component: LandingComponent},
-  
+
 
 ];
 
