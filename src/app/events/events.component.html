@@ -21,7 +21,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{event.name}}</h5>
                     <p class="card-text"><strong>{{formatDate(event.date)}} {{event.time}}</strong></p>
-                    <p class="card-text" *ngFor="let description of event.description">{{description}}</p>
+                    <p class="card-text" *ngFor="let description of event.description" [innerHtml]="description"></p>
 
 
                 </div>

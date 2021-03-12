@@ -53,6 +53,46 @@ export class EventsComponent implements OnInit {
         date:"2021-03-28",
         raindate:"2021-04-2",
         time:"From 4pm until 6"
+      },
+      {
+        name:"Combined Good Friday Worship",
+        description:[
+          "Come join us for a Combined Good Friday Worship at St John's UMC",
+        ],
+        picture:"../../assets/img/events/easter/friday.jpeg",
+        facebook:null,
+        date:"2021-04-2",
+        raindate:null,
+        time:"Starts at 7pm"
+      },
+      {
+        name:"Easter Sunrise Worship",
+        description:[
+          "Come join us for a Sunrise Worship at St. Paul's UMC followed by regular Easter Worship at 10AM",
+        ],
+        picture:"../../assets/img/events/easter/sunrise.jpg",
+        facebook:null,
+        date:"2021-04-4",
+        raindate:null,
+        time:"Starts at 6:30 AM"
+      },
+      {
+        name:"MORE 2 GO",
+        description:[
+          "St. Paul will be offering meals to go each week on Wednesday nights. Pickup is between 5-6pm at the kitchen located in the back parking lot. Please place your oders by Tuesday of each week by calling the church office number locted below",
+          "<strong>Prices:</strong> $8 per adult and $4 per child (age 6 and under free).",
+          "Contact the church office at <a href='tel:540-886-2317'>540-886-2317</a> for more information",
+          "<strong>Upcoming Menu:</strong>",
+          "March 17th - Ziti & Meatballs, Italian Green Beans, Rolls & Dessert",
+          "March 24th - Meatloaf, Macaroni Salad, Green Beans, Roll & Dessert",
+          "March 31st - Stuffed Pork Chops, Roasted Potatoes; Corn, Roll & Dessert",
+          "April 7th - Ziti & Meatballs, Italian Green Beans, Rolls & Dessert"
+        ],
+        picture:"../../assets/img/events/easter/more.jpg",
+        facebook:null,
+        date:"2021-3-3",
+        raindate:"2021-04-7",
+        time:""
       }
 
     ].filter(value=>{

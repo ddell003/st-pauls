@@ -13,83 +13,142 @@ export class EasterComponent implements OnInit {
   stations = [
     new Station(
       1,
-      "Welcome",
+      "Creation and Fall",
       [
-       "You are about to enjoy a story that has been told and retold for two thousand years. The Nativity reveals something very special about God--that he was prepared to be with us and live among us. Imagine the stars in the sky, the countless constellations, the sprawling Solar System...and among it a little planet called Earth. God made all of those things, and all the people of our planet. Just over two thousand years ago, when we most needed him, God came down to be with us, to save us and show us how life should be lived. He could have chosen anywhere to be his home. He could have built a palace for himself. But he didn’t. God chose to send his Son to be born among the forgotten, the overlooked and the poorest. So let’s see the story of how Jesus came to be with us, an event that is still transforming lives to this day.",
-       "The story opens with a young woman in her home – Mary. Unless you look a bit deeper, there is nothing particularly remarkable about Mary. She was from a town called Nazareth and was engaged to be married to Joseph. But, to God, she was very important. So important that God sent an angel down from heaven with a message for her. The angel told Mary that she was very special and that God was with her. The angel told her not to be afraid. She would give birth to a son. She was to call him Jesus, and he would be called the Son of the Most HIgh."
-    ],
-      "camels.png",
-      'Station 1.mp3'
-    ),
-    new Station(
-      2,
-      "Little Town of Bethlehem",
-      [
-        "Mary was excited about the news of the baby and she told Joseph all about it.",
-        "But the Roman emperor, Ceasar Augustus, who ruled over the land, sent an order saying he wanted to count every single person in the country. So everyone – including Mary and Joseph – had to go back to their hometown to be registered. Joseph came from a faraway town called Bethlehem. Because Mary was engaged to be his wife, she went with him to Bethlehem.",
-        "During the journey, Mary was very nearly ready to give birth to her baby. Although tired and weary, Mary and Joseph travelled for many miles. They went from Nazareth in Galilee to Judea and then to Bethlehem."
-    ],
-      "walk.jpg",
+        "Scripture:",
+        "Genesis 1:31 God saw everything that he had made, and behold, it was very good.",
+        "Romans 5:12 Sin entered the world through one man and death through sin.",
+        "God made the whole world. The earth, the sun, the stars, the land and oceans, the plants and animals. And all of it was good! Then God made people too in his own image. They would be his children and would be happy forever in the good world God had made.",
+        'God gave them only one rule. “Do not eat from this tree.” But the first man and woman didn’t trust God. They ate from that tree anyway. As soon as they did, they realized they were naked. They were ashamed and sad for the first time. They hid from God and blamed each other. With them, all of God’s good world became to break and decay. Death entered the world through their sin. '
+      ],
+      "creation.png",
       'Station 2.mp3'
     ),
     new Station(
-      3,
-      "Silent Night",
+      2,
+      "Christ Arrives",
       [
-        "When they arrived in Bethlehem, they knocked on every door in the town, looking for a place to stay--but everywhere was full of people. Each time they were given the same answer. Lots of people had come down to be counted, so the whole town was full. Mary and Joseph nearly gave up, but then they tried the very last guest house.",
-        "“There is no room. All my rooms are full. All I can offer is my stable out in the back, where we keep all the animals.”"
+        "Scripture: John 12: 14-15",
+        'Jesus found a young donkey and sat on it, as it is written: ... your king is coming, seated on a donkey’s colt.',
+        "God would not leave the world broken and dying. Even though people kept on sinning, they kept on ignoring God and hurting each other, God had a  plan to save them. ",
+        "God sent his own son, born of a virgin, to live as a human being. His son, Jesus, lived perfectly in sync with God - the way Adam and Eve should have. He loved people, healed their illnesses and he forgave all their sins. Jesus is God and Man at the same time. He is the real King of the whole world and yet ...he came to claim his throne on a humbly, on a donkey."
+
 
       ],
-      "little.jpeg",
+      "donkey.jpg",
       'Station 3.mp3'
     ),
     new Station(
-      4,
-      "The Manger",
+      3,
+      "The Last Supper",
       [
-        "It was a very difficult place to bring a new life into the world. Dirty, smelly and unhygienic. But Mary and Joseph made the best of it. When the baby came, they wrapped little Jesus in swaddling cloths. They didn’t have anything to put him in, so they placed the Son of God in a manger – a trough that is used to feed animals. This probably not what Mary was expecting. The angel said Jesus would be called the Son of the Most High. But as she looked at the sleeping baby in the manger, she knew that he was a precious gift. ",
+        "Scripture: Mark 14: 22",
+        'Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples, saying, “Take it; this is my body.”',
+        "Jesus knew he would die as a sacrifice to forgive the sins of the humans. His perfect life and death would put an end to the horrible consequence of sin once and for all. ",
+        "The night before, he celebrated the Passover holiday with his disciples, his best friends. Jesus told them what was about to happen, that he was about to die. He told them that his body would be broken like bread and his blood poured out like wine. He would be their sacrifice so that they could once more live in friendship and happiness with God.  ",
+        "His friends all promised that they would die with him rather than ever leave him.",
     ],
-      "joy.jpg",
+      "supper.jpg",
       'Station 4.mp3'
     ),
     new Station(
-      5,
-      "Shepherds and Angels",
+      4,
+      "The Garden & Betrayal",
       [
-        'Meanwhile, in some fields nearby, it was night time and a group of shepherds were keeping watch over their flocks. These shepherds were just ordinary people going about their daily lives. They were not considered very important. Nobody took much notice of them. So they were surprised, to say the least, to see an angel of the Lord appear in front of them. The glory of God shone all around the shepherds and they were terrified. The angel spoke to them.',
-        '“Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.  For unto you is born this day in the city of David, a Savior, which is Christ the Lord. And this shall be a sign unto you; Ye shall find the babe wrapped in swaddling cloths, lying in a manger.” ',
-        'And suddenly the angel was joined by a huge group of angels, called the heavenly host.',
-        '“Glory to God in the highest, and on earth peace, good will toward men.”',
-        'The shepherds wondered what they should do next. They decided the best thing was to go to Bethlehem to see what had happened. So they hurried off to seek Mary and Joseph and the baby.',
+        "Scripture:",
+        'Mark 14:36 - “Abba,[f] Father,” he said, “everything is possible for you. Take this cup from me. Yet not what I will, but what you will.”',
+        'Mark 14:44 the betrayer had arranged a signal with them: “The one I kiss is the man; arrest him',
+        'Jesus went to pray the night before his death. He prayed, “Abba,Father, everything is possible for you. Take this cup from me. Yet not what I will, but what you will.” Jesus obeyed God in everything. No matter the cost.',
+        'Judas, one of Jesus best friends, betrayed Jesus. He lead people who wanted to kill Jesus to where he was praying.  Judas had arranged a signal with them: “The one I kiss is the man; arrest him.” And so they arrested him and lead him away. ',
+
       ],
-      "shepherds.jpg",
+      "garden.jpg",
       'Station 5.mp3'
     ),
     new Station(
-      6,
-      "The Wisemen",
+      5,
+      "The Denial",
       [
-        'Some time later there came wise men from the east to Jerusalem. They asked, ',
-        '“Where is the baby who was born King of the Jews? We have seen his star in the east and have come to worship him.” ',
-        'When Herod the king had heard these things, he was troubled. He sent the wise men to Bethlehem and said, ',
-        '“Go and search diligently for the young child; and when you have found him, bring me word again, that I may come and worship him also."',
-        'When they heard the king, they departed and the star, which they saw in the east, went before them until it came and stood over where the young child was. When they saw the star, they rejoiced with great joy. The wise men saw the child and they worshipped him. They brought gifts of gold, frankincense, and myrrh and presented them to him.',
-        'End',
-        'Each of them gave Jesus a special gift, and that is why we give gifts at Christmas. They went home even wiser men, realizing that precious things are worth far more than money and are not always found in the richest places. They realized that they should offer their wealth to Jesus, the Son of God, who was born into poverty and was a friend of poor and needy people.',
-        'Thank you for spending time with us celebrating God’s gift to us all. We would love for you to worship with us on Sunday mornings at 10:00am. For any questions, please call 540-886-2317. Merry Christmas!'
+        "Scripture:",
+        'Mark 14:71 ',
+        '[Peter] swore to them “I don’t know this man you’re talking about.”',
+        'After Jesus was arrested, all his disciples ran away. Peter, one of his best friends, followed him to the trial. A servant girl asked him if he was with Jesus and Peter said no. She asked him 3 times and every time Peter said no, I don’t know Jesus.',
+        'A rooster crowed. ',
+        '“Then Peter remembered the word Jesus had spoken: “Before the rooster crows, you will disown me three times.” And he went outside and wept bitterly.”  Matthew 26:75'
+
       ],
-      "wisemen.jpeg",
+      "peter.jpg",
       'Station 6.mp3'
     ),
-    /*new Station(
-      7,
-      "Joy to the World",
+    new Station(
+      6,
+      "Condemned - Pilate",
       [
-        "Thank you for spending time with us this afternoon celebrating God’s gift to us all. We would love for you to worship with us on Sunday mornings at 10:00AM. For any questions, please call 886-2317 and Merry Christmas!"
+        "Scripture: Mark 15:13-14",
+        'Crucify him!” they shouted. 14 “Why? What crime has he committed?” asked Pilate. But they shouted all the louder, “Crucify him!”',
+        'The Jewish leaders wanted to kill Jesus. They took him the the governor Pontius Pilate and said Jesus’ wanted to be a king and overthrow the government.',
+        "Pilate questioned Jesus and had him beaten. The guards mocked him and put a crown of thorns on him. But they didn’t find any evidence of a crime. Jesus had never sinned. He never did anything wrong.",
+        'But the people shouted and shouted so much that Pilate ordered his soldiers to execute Jesus anyway.',
+
+
+
       ],
-      "joy.jpg",
+      "trial.jpg",
       'Station 6.mp3'
-    ),*/
+    ),
+    new Station(
+      7,
+      "Carrying The Cross",
+      [
+        "Scripture: John 19:17",
+        'Carrying his own cross, he went out to the place of the Skull ',
+        'So the soldiers took charge of Jesus. 17 Carrying his own cross, he went out to the place of the Skull (which in Aramaic is called Golgotha). There they crucified him, and with him two others—one on each side and Jesus in the middle.',
+        'Pilate had a notice prepared and fastened to the cross. It read: jesus of nazareth, the king of the jews. ',
+
+      ],
+      "carrying.jpeg",
+      'Station 6.mp3'
+    ),
+    new Station(
+      8,
+      "Death",
+      [
+        "Scripture:",
+        "John 19:30",
+        'Jesus said, “It is finished.” With that, he bowed his head and gave up his spirit.',
+        'Mark 15:24-41',
+        'They crucified him. Dividing up his clothes, [the soldiers] cast lots to see what each would get…',
+        '27 They crucified two rebels with him, one on his right and one on his left. [29 Those who passed by hurled insults at him, shaking their heads...“He saved others,” they said, “but he can’t save himself! 32 Let this Messiah, this king of Israel, come down now from the cross, that we may see and believe.” ',
+        '33 At noon, darkness came over the whole land until three in the afternoon. 34 And at three in the afternoon Jesus cried out in a loud voice, “Eloi, Eloi, lema sabachthani?” (which means “My God, my God, why have you forsaken me?”) 337 With a loud cry, Jesus breathed his last.',
+      ],
+      "crosses.jpg",
+      'Station 6.mp3'
+    ),
+    new Station(
+      9,
+      "Buried",
+      [
+        "Scripture: John 19:38-41",
+        '38 Later, Joseph of Arimathea asked Pilate for the body of Jesus. Now Joseph was a disciple of Jesus, but secretly because he feared the Jewish leaders. With Pilate’s permission, he came and took the body away. 39 He was accompanied by Nicodemus, the man who earlier had visited Jesus at night. Nicodemus brought a mixture of myrrh and aloes, about seventy-five pounds.[e] 40 Taking Jesus’ body, the two of them wrapped it, with the spices, in strips of linen. This was in accordance with Jewish burial customs. 41 At the place where Jesus was crucified, there was a garden, and in the garden a new tomb, in which no one had ever been laid. 42 Because it was the Jewish day of Preparation and since the tomb was nearby, they laid Jesus there.',
+      ],
+      "tomb.jpg",
+      'Station 6.mp3'
+    ),
+    new Station(
+      10,
+      "Resurrection",
+      [
+        "Scripture: Matthew 28:1-10",
+        "Three days passed after Jesus died.",
+        'Mary Magdalene and the other Mary went to look at the tomb. ',
+        '2 There was a violent earthquake, for an angel of the Lord came down from heaven and, going to the tomb, rolled back the stone and sat on it. 3 His appearance was like lightning, and his clothes were white as snow. 4 The guards were so afraid of him that they shook and became like dead men.',
+        '5 The angel said to the women, “Do not be afraid, for I know that you are looking for Jesus, who was crucified. 6 He is not here; he has risen, just as he said. Come and see the place where he lay. 7 Then go quickly and tell his disciples: ‘He has risen from the dead and is going ahead of you into Galilee. There you will see him.’ ',
+        '8 So the women hurried away from the tomb, afraid yet filled with joy, and ran to tell his disciples. 9 Suddenly Jesus met them. “Greetings,” he said. They came to him, clasped his feet and worshiped him. 10 Then Jesus said to them, “Do not be afraid. Go and tell my brothers to go to Galilee; there they will see me.”        '
+
+      ],
+      "empty.png",
+      'Station 6.mp3'
+    ),
   ];
 
   current:Station = this.stations[0];

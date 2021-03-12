@@ -28,8 +28,8 @@
 <section class="faith-about-area section-padding-100-0 darkbg">
   <div class="container">
       <div class="card mb-3 current-station" id="current">
-          <img *ngIf="! start" class="card-img-top" src="../../assets/img/welcome.jpg" alt="Card image cap">
-          <img  *ngIf="start"class="card-img-top" src="../../assets/img/{{current.image}}" alt="Card image cap">
+          <img *ngIf="! start" class="card-img-top" src="../../assets/img/events/easter/intro.png" alt="Card image cap">
+          <img  *ngIf="start"class="card-img-top" src="../../assets/img/events/easter/{{current.image}}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{current.title}}</h5>
             <!--<a class="btn btn-primary pull-right" (click)="playAudio(current.audio)">playAudio &#x3e;</a>-->
@@ -58,14 +58,14 @@
           </div>
       </div>
       <hr style="border: 1px solid red;">
-      <div *ngIf="current.id == 7" class="row">
+      <div *ngIf="current.id == stations.length" class="row">
           <div class="col-sm-12">
               <h4>The Stations</h4>
           </div>
 
           <div class="col-lg-4 col-sm-12"  *ngFor="let station of stations" style="margin-top:5px;">
               <div class="card h-100">
-                  <img class="card-img-top" src="../../assets/img/{{station.image}}" alt="Card image cap" style="height: 230px;">
+                  <img class="card-img-top" src="../../assets/img/events/easter/{{station.image}}" alt="Card image cap" style="height: 230px;">
                   <div class="card-body">
                       <h5 class="card-title">{{station.title}}</h5>
                       <p class="card-text"><small class="text-muted">Station {{station.id}}</small><a (click)="setCurrent(station.id)" class="btn btn-primary pull-right">Open</a></p>
