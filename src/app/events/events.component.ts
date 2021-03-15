@@ -51,7 +51,7 @@ export class EventsComponent implements OnInit {
         picture:"../../assets/img/journey-950.jpg",
         facebook:null,
         date:"2021-03-28",
-        raindate:"2021-04-2",
+        raindate:"2021-04-02",
         time:"From 4pm until 6"
       },
       {
@@ -61,7 +61,7 @@ export class EventsComponent implements OnInit {
         ],
         picture:"../../assets/img/events/easter/friday.jpeg",
         facebook:null,
-        date:"2021-04-2",
+        date:"2021-04-02",
         raindate:null,
         time:"Starts at 7pm"
       },
@@ -72,7 +72,7 @@ export class EventsComponent implements OnInit {
         ],
         picture:"../../assets/img/events/easter/sunrise.jpg",
         facebook:null,
-        date:"2021-04-4",
+        date:"2021-04-04",
         raindate:null,
         time:"Starts at 6:30 AM"
       },
@@ -90,8 +90,8 @@ export class EventsComponent implements OnInit {
         ],
         picture:"../../assets/img/events/easter/more.jpg",
         facebook:null,
-        date:"2021-3-3",
-        raindate:"2021-04-7",
+        date:"2021-3-03",
+        raindate:"2021-04-07",
         time:""
       }
 
