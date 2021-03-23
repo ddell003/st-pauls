@@ -36,7 +36,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "donkey.jpg",
-      'Station 3.mp3'
+      '/easter/station2.mp3'
     ),
     new Station(
       3,
@@ -49,7 +49,7 @@ export class EasterComponent implements OnInit {
         "His friends all promised that they would die with him rather than ever leave him.",
     ],
       "supper.jpg",
-      'Station 4.mp3'
+      '/easter/station3.mp3'
     ),
     new Station(
       4,
@@ -63,7 +63,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "garden.jpg",
-      'Station 5.mp3'
+      '/easter/station4.mp3'
     ),
     new Station(
       5,
@@ -78,7 +78,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "peter.jpg",
-      'Station 6.mp3'
+      '/easter/station5.mp3'
     ),
     new Station(
       6,
@@ -94,7 +94,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "trial.jpg",
-      'Station 6.mp3'
+      '/easter/station6.mp3'
     ),
     new Station(
       7,
@@ -107,7 +107,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "carrying.jpeg",
-      'Station 6.mp3'
+      '/easter/station7.mp3'
     ),
     new Station(
       8,
@@ -122,7 +122,7 @@ export class EasterComponent implements OnInit {
         '33 At noon, darkness came over the whole land until three in the afternoon. 34 And at three in the afternoon Jesus cried out in a loud voice, “Eloi, Eloi, lema sabachthani?” (which means “My God, my God, why have you forsaken me?”) 337 With a loud cry, Jesus breathed his last.',
       ],
       "crosses.jpg",
-      'Station 6.mp3'
+      '/easter/station8.mp3'
     ),
     new Station(
       9,
@@ -132,7 +132,7 @@ export class EasterComponent implements OnInit {
         '38 Later, Joseph of Arimathea asked Pilate for the body of Jesus. Now Joseph was a disciple of Jesus, but secretly because he feared the Jewish leaders. With Pilate’s permission, he came and took the body away. 39 He was accompanied by Nicodemus, the man who earlier had visited Jesus at night. Nicodemus brought a mixture of myrrh and aloes, about seventy-five pounds.[e] 40 Taking Jesus’ body, the two of them wrapped it, with the spices, in strips of linen. This was in accordance with Jewish burial customs. 41 At the place where Jesus was crucified, there was a garden, and in the garden a new tomb, in which no one had ever been laid. 42 Because it was the Jewish day of Preparation and since the tomb was nearby, they laid Jesus there.',
       ],
       "tomb.jpg",
-      'Station 6.mp3'
+      '/easter/station9.mp3'
     ),
     new Station(
       10,
@@ -147,7 +147,7 @@ export class EasterComponent implements OnInit {
 
       ],
       "empty.png",
-      'Station 6.mp3'
+      '/easter/station10.mp3'
     ),
   ];
 

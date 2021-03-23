@@ -1,4 +1,4 @@
-<div class="breadcumb-area bg-img" style="background-image: url('../../assets/img/events/easter/cross.jpg');">
+<div *ngIf="0" class="breadcumb-area bg-img" style="background-image: url('../../assets/img/events/easter/cross.jpg');">
   <div class="container h-100">
       <div class="row h-75 align-items-center">
           <div class="col-12 col-md-12">
@@ -44,11 +44,15 @@
               <audio *ngIf="current.id === 1" controls id="{{current.id}}"><source src="../../assets/audio/easter/station1.mp3" type="audio/mp3">
                   <a href="../../assets/audio/easter/station1.mp3">download the music</a>
               </audio>
-              <audio *ngIf="current.id === 2" controls id="{{current.id}}"><source src="../../assets/audio/Station 2.mp3" type="audio/mpeg"></audio>
-              <audio *ngIf="current.id === 3" controls id="{{current.id}}"><source src="../../assets/audio/Station 3.mp3" type="audio/mpeg"></audio>
-              <audio *ngIf="current.id === 4" controls id="{{current.id}}"><source src="../../assets/audio/Station 4.mp3" type="audio/mpeg"></audio>
-              <audio *ngIf="current.id === 5" controls id="{{current.id}}"><source src="../../assets/audio/Station 5.mp3" type="audio/mpeg"></audio>
-              <audio *ngIf="current.id === 6" controls id="{{current.id}}"><source src="../../assets/audio/Station 6.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 2" controls id="{{current.id}}"><source src="../../assets/audio/easter/station2.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 3" controls id="{{current.id}}"><source src="../../assets/audio/easter/station3.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 4" controls id="{{current.id}}"><source src="../../assets/audio/easter/station4.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 5" controls id="{{current.id}}"><source src="../../assets/audio/easter/station5.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 6" controls id="{{current.id}}"><source src="../../assets/audio/easter/station6.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 7" controls id="{{current.id}}"><source src="../../assets/audio/easter/station7.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 8" controls id="{{current.id}}"><source src="../../assets/audio/easter/station8.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 9" controls id="{{current.id}}"><source src="../../assets/audio/easter/station9.mp3" type="audio/mpeg"></audio>
+              <audio *ngIf="current.id === 10" controls id="{{current.id}}"><source src="../../assets/audio/easter/station10.mp3" type="audio/mpeg"></audio>
 
             <p class="card-text" *ngFor="let description of current.description">{{description}}</p>
             <p class="card-text"><small class="text-muted">Station {{current.id}} of {{stations.length}}</small></p>
