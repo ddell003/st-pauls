@@ -22,7 +22,7 @@ export class EasterComponent implements OnInit {
         'God gave them only one rule. “Do not eat from this tree.” But the first man and woman didn’t trust God. They ate from that tree anyway. As soon as they did, they realized they were naked. They were ashamed and sad for the first time. They hid from God and blamed each other. With them, all of God’s good world became to break and decay. Death entered the world through their sin. '
       ],
       "creation.png",
-      'Station 2.mp3'
+      '/easter/station1.mp3'
     ),
     new Station(
       2,
