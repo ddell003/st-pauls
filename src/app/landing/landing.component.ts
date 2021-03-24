@@ -52,8 +52,8 @@ export class LandingComponent implements OnInit, OnDestroy {
         this.videos = videos;
     });
 
-     /* // Create date from input value
-      var inputDate = new Date("12/6/2020");
+     // Create date from input value
+      var inputDate = new Date("03/28/2021");
 
       // Get today's date
       var todaysDate = new Date();
@@ -61,7 +61,7 @@ export class LandingComponent implements OnInit, OnDestroy {
       // call setHours to take the time out of the comparison
       if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
         this.nativityDate = true;
-      }*/
+      }
 
   }
 

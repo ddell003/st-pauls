@@ -31,7 +31,8 @@
           <img *ngIf="! start" class="card-img-top" src="../../assets/img/events/easter/intro.png" alt="Card image cap">
           <img  *ngIf="start"class="card-img-top" src="../../assets/img/events/easter/{{current.image}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">{{current.title}}</h5>
+            <h5 class="card-title" *ngIf="current.id === 1 && ! start">Welcome!</h5>
+            <h5 class="card-title" *ngIf="start">{{current.title}}</h5>
             <!--<a class="btn btn-primary pull-right" (click)="playAudio(current.audio)">playAudio &#x3e;</a>-->
 
 
