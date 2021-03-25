@@ -52,7 +52,7 @@ export class EventsComponent implements OnInit {
         facebook:null,
         date:"2021-03-28",
         raindate:"2021-04-02",
-        time:"From 4pm until 6"
+        time:"From 2pm until 4:30"
       },
       {
         name:"Combined Good Friday Worship",
