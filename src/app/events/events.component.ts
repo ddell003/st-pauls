@@ -51,7 +51,7 @@ export class EventsComponent implements OnInit {
         picture:"../../assets/img/journey-950.jpg",
         facebook:null,
         date:"2021-03-28",
-        raindate:"2021-04-02",
+        raindate:null,
         time:"From 2pm until 4:30"
       },
       {
@@ -83,8 +83,6 @@ export class EventsComponent implements OnInit {
           "<strong>Prices:</strong> $8 per adult and $4 per child (age 6 and under free).",
           "Contact the church office at <a href='tel:540-886-2317'>540-886-2317</a> for more information",
           "<strong>Upcoming Menu:</strong>",
-          "March 24th - Meatloaf, Macaroni Salad, Green Beans, Roll & Dessert",
-          "March 31st - Stuffed Pork Chops, Roasted Potatoes; Corn, Roll & Dessert",
           "April 7th - Ziti & Meatballs, Italian Green Beans, Rolls & Dessert"
         ],
         picture:"../../assets/img/events/easter/more.jpg",
