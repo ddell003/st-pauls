@@ -83,12 +83,13 @@ export class EventsComponent implements OnInit {
           "<strong>Prices:</strong> $8 per adult and $4 per child (age 6 and under free).",
           "Contact the church office at <a href='tel:540-886-2317'>540-886-2317</a> for more information",
           "<strong>Upcoming Menu:</strong>",
-          "April 7th - Ziti & Meatballs, Italian Green Beans, Rolls & Dessert"
+          "April 14th - Meatloaf, Macaroni Salad, Green Beans, Roll & Dessert",
+          "April 21st - Baked Stuffed Pork Chops, Roasted Potatoes, Corn O'Brien, Roll & Dessert"
         ],
         picture:"../../assets/img/events/easter/more.jpg",
         facebook:null,
         date:"2021-3-03",
-        raindate:"2021-04-07",
+        raindate:"2021-04-21",
         time:""
       }
 
