@@ -88,7 +88,7 @@ export class EventsComponent implements OnInit {
         ],
         picture:"../../assets/img/events/easter/more.jpg",
         facebook:null,
-        date:"2021-3-03",
+        date:"2021-04-07",
         raindate:"2021-04-21",
         time:""
       }
