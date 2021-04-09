@@ -1,0 +1,14 @@
+<div class="row " *ngIf="videos.length > 0">
+
+  <div class="col-lg-4 col-sm-12" *ngFor="let video of videos">
+    <iframe
+    width="100%"
+    height="315" [src]="video.link"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  </div>
+
+</div>
+

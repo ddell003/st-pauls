@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EventsComponent } from './events/events.component';
 import { FacebookSermonsComponent } from './facebook-sermons/facebook-sermons.component';
 import { EasterComponent } from './events/easter/easter.component';
+import { YtVideosComponent } from './yt-videos/yt-videos.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { EasterComponent } from './events/easter/easter.component';
     NativityComponent,
     EventsComponent,
     FacebookSermonsComponent,
-    EasterComponent
+    EasterComponent,
+    YtVideosComponent
   ],
   imports: [
     BrowserModule,

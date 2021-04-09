@@ -44,13 +44,13 @@ export class LandingComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     //jQuery.getScript('../../assets/js/active.js')
-    this.sermons = SermonCollection.sermons.slice(0,12);
+    /*this.sermons = SermonCollection.sermons.slice(0,12);
     this.facebookservice.getVideos();
     this.videoSubscription = this.facebookservice.getVideoListener()
     .subscribe((videos:Video[])=>{
         console.log("videos", videos)
         this.videos = videos;
-    });
+    });*/
 
      // Create date from input value
       var inputDate = new Date("03/28/2021");
@@ -62,6 +62,8 @@ export class LandingComponent implements OnInit, OnDestroy {
       if(inputDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
         this.nativityDate = true;
       }
+
+      //https://www.youtube.com/feeds/videos.xml?channel_id=UCB35_BlFjZjtpzsvC11GmaA
 
   }
 

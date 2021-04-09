@@ -11,7 +11,7 @@ export class SermonsComponent implements OnInit {
 
   private videoSubscription: Subscription;
 
-  constructor(private facebookservice: FacebookService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
