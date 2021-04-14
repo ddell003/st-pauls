@@ -68,7 +68,7 @@ export class LandingComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.videoSubscription.unsubscribe();
+    //this.videoSubscription.unsubscribe();
   }
 
 }
