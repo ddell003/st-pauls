@@ -1,22 +1,47 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as moment from 'moment';
+import { Subscription } from 'rxjs';
+import { sheetService } from '../services/sheetService';
+import {formatImgUrl} from '../services/helpers';
+import { Event, RawEvent } from './event.model';
 
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent implements OnInit {
+export class EventsComponent implements OnInit, OnDestroy {
 
   public events = [];
 
-  constructor() { }
+  private itemSubscription: Subscription;
+
+  constructor(private sheetService: sheetService) { }
 
   ngOnInit(): void {
     var todaysDate = moment().format("YYYY-MM-DD");
     console.log("date - "+todaysDate)
 
-    this.events = [
+    this.itemSubscription = this.sheetService.getSheetListener()
+    .subscribe((items:[])=>{
+        console.log("event items", items)
+
+        this.events = items.map((item:RawEvent)=> {
+          return {
+            name:item.name,
+            description:[item.description],
+            picture:formatImgUrl(item.pictureUrl),
+            embeded: (item.hasOwnProperty("embededLink")) ? item.embeded : null,
+            date:item.date,
+            time:(item.hasOwnProperty("time")) ? item.time : null,
+            raindate:(item.hasOwnProperty("raindate")) ? item.raindate : null,
+        }
+        });
+    });
+
+    this.sheetService.getItems(2);
+
+    /*this.events = [
       {
         name:"Nativity",
         description:[
@@ -83,17 +108,31 @@ export class EventsComponent implements OnInit {
           "<strong>Prices:</strong> $8 per adult and $4 per child (age 6 and under free).",
           "Contact the church office at <a href='tel:540-886-2317'>540-886-2317</a> for more information",
           "<strong>Upcoming Menu:</strong>",
-          "April 14th - Meatloaf, Macaroni Salad, Green Beans, Roll & Dessert",
-          "April 21st - Baked Stuffed Pork Chops, Roasted Potatoes, Corn O'Brien, Roll & Dessert"
+          "April 28th - Hamburger Steak with Gravy, Mac and Cheese, Green Beans, Rolls & Dessert",
+          "May 5th - Ziti with Meat Sauce and Meatballs, Roll & Dessert",
+          "May 12th -  Meatloaf, Macaroni Salad, Green Beans, Rolls & Dessert",
+          "May 19th - Hamburger Steak with Gravy, Mac and Cheese, Green Beans, Rolls & Dessert"
         ],
         picture:"../../assets/img/events/easter/more.jpg",
         facebook:null,
-        date:"2021-04-07",
-        raindate:"2021-04-21",
+        date:"2021-05-19",
+        raindate:"2021-05-19",
+        time:""
+      },
+      {
+        name:"MORE 2 GO",
+        description:[
+          '<div>St. Paul will be offering meals to go each week on Wednesday nights. Pickup is between 5-6pm at the kitchen located in the back parking lot. Please place your oders by Tuesday of each week by calling the church office number locted below</div><div>&nbsp;</div><div><div><strong>Prices:</strong> $8 per adult and $4 per child (age 6 and under free).</div><div>&nbsp;</div><div>Contact the church office at&nbsp;<a href="tel:540-886-2317">540-886-2317</a>&nbsp;for more information</div><div>&nbsp;</div><div><strong>Upcoming Menu:</strong></div><div>&nbsp;</div><div><div><div>April 28th -&nbsp;Hamburger Steak with Gravy, Mac and Cheese, Green Beans, Rolls &amp; Dessert</div><div>&nbsp;</div><div><div><div>May 5th - Ziti with Meat Sauce and Meatballs, Roll &amp; Dessert</div><div>&nbsp;</div><div><div><div>May 12th - Meatloaf, Macaroni Salad, Green Beans, Rolls &amp; Dessert</div><div>&nbsp;</div><div><div><div>May 19th - Hamburger Steak with Gravy, Mac and Cheese, Green Beans, Rolls &amp; Dessert</div></div></div></div></div></div></div></div></div></div>'
+        ],
+        picture:"../../assets/img/events/easter/more.jpg",
+        facebook:null,
+        date:"2021-05-19",
+        raindate:"2021-05-19",
         time:""
       }
 
-    ].filter(value=>{
+    ]*/
+    this.events.filter(value=>{
       let show = true;
       if(value.raindate){
         const rainDate = moment(value.raindate).add(1, 'day').format("YYYY-MM-DD");
@@ -108,6 +147,10 @@ export class EventsComponent implements OnInit {
     })
     console.log("events", this.events);
 
+  }
+
+  ngOnDestroy():void {
+    this.itemSubscription.unsubscribe();
   }
 
   formatDate(date:string){

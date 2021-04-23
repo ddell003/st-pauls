@@ -14,6 +14,7 @@ import { PreschoolComponent } from './ministries/preschool/preschool.component';
 import { ServeComponent } from './ministries/serve/serve.component';
 import { YouthComponent } from './ministries/youth/youth.component';
 import { NativityComponent } from './nativity/nativity.component';
+import { NewsLettersComponent } from './news-letters/news-letters.component';
 import { SermonsComponent } from './sermons/sermons.component';
 import { StaffComponent } from './staff/staff.component';
 
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'ministries/serve', component: ServeComponent},
   { path: 'connect', component: ConnectComponent},
   { path: 'connect/:slug', component: ConnectItemComponent},
+  { path: 'newsletters', component: NewsLettersComponent},
   //make a 404 page not found
   { path: '**', component: LandingComponent},
 

@@ -25,6 +25,8 @@ import { EventsComponent } from './events/events.component';
 import { FacebookSermonsComponent } from './facebook-sermons/facebook-sermons.component';
 import { EasterComponent } from './events/easter/easter.component';
 import { YtVideosComponent } from './yt-videos/yt-videos.component';
+import { BulletinComponent } from './bulletin/bulletin.component';
+import { NewsLettersComponent } from './news-letters/news-letters.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { YtVideosComponent } from './yt-videos/yt-videos.component';
     EventsComponent,
     FacebookSermonsComponent,
     EasterComponent,
-    YtVideosComponent
+    YtVideosComponent,
+    BulletinComponent,
+    NewsLettersComponent
   ],
   imports: [
     BrowserModule,

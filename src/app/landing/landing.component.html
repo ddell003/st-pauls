@@ -107,7 +107,6 @@
     </div>
 </section>
 <!-- ##### Hero Area End ##### -->
-
 <!-- ##### CTA Area Start ##### -->
 <div class="faith-cta-area">
     <div class="container">
@@ -121,8 +120,6 @@
         </div>
     </div>
 </div>
-
-<app-events></app-events>
 
 <!-- ##### About Area Start ##### -->
 <section class="faith-about-area section-padding-100-0">
@@ -139,7 +136,8 @@
                     <div class="clearfix"></div>
                     <br>
                     <a  href="{{ url('/services') }}" class="btn faith-btn blue-outline-btn" style="margin-right:3px">LEARN MORE</a>
-                    <a  href="{{ url('/staff') }}#ryan" class="btn faith-btn blue-outline-btn">MEET OUR PASTOR</a>
+                    <a  href="{{ url('/staff') }}#ryan" class="btn faith-btn blue-outline-btn" style="margin-right:3px">MEET OUR PASTOR</a>
+                    <a  href="{{ url('/newsletters') }}" class="btn faith-btn blue-outline-btn">News Letters</a>
 
                 </div>
             </div>
@@ -147,7 +145,6 @@
     </div>
 </section>
 <!-- ##### About Area End ##### -->
-
 <!-- ##### Church Activities Area Start ##### -->
 <section class="church-activities-area section-padding-100-0 darkbg">
     <div class="container">
@@ -161,7 +158,8 @@
                     <br>
                     <a  href="https://www.facebook.com/stpaulsumcstaunton" class="btn faith-btn active"  style="border:2px solid #00c8e6; background-color: white; color:#1b1b1b; margin-right: 3px;" target="_blank">WATCH LIVE - Facebook</a>
                     <a  href="http://bit.ly/stpaulsumcstaunton" class="btn faith-btn active"  style="border:2px solid #00c8e6; background-color: white; color:#1b1b1b" target="_blank">WATCH LIVE - Youtube</a>
-                </div>
+                    <app-bulletin></app-bulletin>
+                  </div>
             </div>
         </div>
     </div>

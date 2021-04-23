@@ -1,0 +1,20 @@
+<section class="faith-about-area section-padding-100-0" style="background-color: #f6f6f6;">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="about-content">
+                  <!--<img src="../../assets/img/core-img/crossDark.png" alt="">-->
+                  <h2 class="welcomeTitle">News Letters</h2>
+              </div>
+          </div>
+
+          <div class="col-lg-4" *ngFor="let item of newsItems">
+            <a [href]="item.Url" target="_blank"><h5> <i class="fa fa-download" aria-hidden="true"></i> {{item.Date}} -  {{item.Name}}</h5></a>
+          </div>
+
+
+
+      </div>
+      <br>
+  </div>
+</section>

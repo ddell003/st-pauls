@@ -14,14 +14,16 @@
             <div class="card h-100">
                 <img *ngIf="event.picture" class="card-img-top" [src]="event.picture" alt="Card image cap">
                 <div class="fb-video card-img-top"
-                *ngIf="event.facebook"
-                [attr.data-href]="event.facebook"
-                data-width=""
-                data-allowfullscreen="true"></div>
+                *ngIf="event.embeded"
+                [innerHtml]="event.embeded"
+                ></div>
                 <div class="card-body">
-                    <h5 class="card-title">{{event.name}}</h5>
-                    <p class="card-text"><strong>{{formatDate(event.date)}} {{event.time}}</strong></p>
-                    <p class="card-text" *ngFor="let description of event.description" [innerHtml]="description"></p>
+                    <!--<h5 class="card-title">{{event.name}}</h5>
+                    <p class="card-text"><strong>{{formatDate(event.date)}} {{event.time}}</strong></p>-->
+                    <!--<p class="card-text" *ngFor="let description of event.description" [innerHtml]="description"></p>-->
+                    <div *ngFor="let description of event.description" [innerHtml]="description">
+
+                    </div>
 
 
                 </div>
