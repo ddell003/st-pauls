@@ -44,6 +44,7 @@ export class sheetService {
           const data = JSON.parse(formattedText)
           this.items = processGSheetResults(data).reverse();
           this.itemsLoaded.next([...this.items]);
+          console.log("events", this.items)
       },
       error => {
         console.log("error", error)
