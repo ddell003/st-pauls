@@ -52,3 +52,14 @@ export const formatImgUrl = (url) => {
   }
   return formatted;
 }
+
+export const formatImgUrl2 = (url) => {
+  let formatted = url;
+  const urlParts = url.split("/");
+
+  if(urlParts[2] === "drive.google.com"){
+    const id = urlParts[(urlParts.length - 2)];
+    formatted = `https://lh3.googleusercontent.com/d/${id}=s400`;
+  }
+  return formatted;
+}
