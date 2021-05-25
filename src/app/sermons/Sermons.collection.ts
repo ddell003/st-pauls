@@ -1,4 +1,4 @@
-import { Sermon } from './Sermon.model';
+import { Sermon } from './sermon.model';
 
 export class SermonCollection{
   //https://docs.google.com/spreadsheets/d/e/2PACX-1vRLIn8nPfoI36n0VFosWmRDVqpaaIOK0RW0a95nt6LdgSYwB3UPYHgT8QMb5Z9lDs83mRQbx3gBl1e5/pubhtml
