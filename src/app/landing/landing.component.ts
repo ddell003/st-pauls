@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import '../../assets/js/active.js';
-import { Sermon } from '../sermons/Sermon.model.js';
+import { Sermon } from '../sermons/sermon.model.js';
 import { SermonCollection } from '../sermons/Sermons.collection.js';
 import { Video } from '../sermons/video.model.js';
 import { FacebookService } from '../services/facebook.service.js';
