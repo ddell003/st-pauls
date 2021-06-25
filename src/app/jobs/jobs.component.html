@@ -1,0 +1,30 @@
+<section class="church-activities-area section-padding-100-0">
+  <div class="container">
+
+      <div class="row">
+          <div class="col-12 col-lg-12">
+              <!-- Latest Sermons -->
+              <div class="latest-sermons mb-100">
+                  <div class="headline">
+                      <h2 class="">Job Openings</h2>
+                      <hr style="background-color:#ff0024">
+                  </div>
+                  <div class="sermonContainer">
+
+                    <div class="col-lg-6 col-sm-12" *ngFor="let job of jobs" style="margin-bottom:5px">
+                      <div class="card h-100">
+                          <div class="card-body">
+                              <h5 class="card-title">{{job.title}}
+                                <a [href]="job.link" class="btn btn-lg btn-info pull-right" target="__blank">Details</a>
+                              </h5>
+                          </div>
+                      </div>
+                  </div>
+
+
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
