@@ -27,6 +27,7 @@ import { EasterComponent } from './events/easter/easter.component';
 import { YtVideosComponent } from './yt-videos/yt-videos.component';
 import { BulletinComponent } from './bulletin/bulletin.component';
 import { NewsLettersComponent } from './news-letters/news-letters.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NewsLettersComponent } from './news-letters/news-letters.component';
     EasterComponent,
     YtVideosComponent,
     BulletinComponent,
-    NewsLettersComponent
+    NewsLettersComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
