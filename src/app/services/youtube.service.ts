@@ -14,7 +14,8 @@ export class YoutubeService {
 
   private videosLoaded = new Subject<Video[]>();
 
-  private url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCB35_BlFjZjtpzsvC11GmaA";
+  //private url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCB35_BlFjZjtpzsvC11GmaA";
+  private url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCB35_BlFjZjtpzsvC11GmaA%26max-results%3D50";
 
 
   videos = [];

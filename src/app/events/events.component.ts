@@ -4,6 +4,8 @@ import { Subscription } from 'rxjs';
 import { sheetService } from '../services/sheetService';
 import {formatImgUrl} from '../services/helpers';
 import { Event, RawEvent } from './event.model';
+// @ts-ignore
+import jsonEvents from '../../assets/data/events.json';
 
 @Component({
   selector: 'app-events',
@@ -16,43 +18,81 @@ export class EventsComponent implements OnInit, OnDestroy {
 
   private itemSubscription: Subscription;
 
-  constructor(private sheetService: sheetService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    var todaysDate = moment().format("YYYY-MM-DD");
-    console.log("date - "+todaysDate)
+    console.log('new events', jsonEvents);
 
-    this.itemSubscription = this.sheetService.getSheetListener()
-    .subscribe((items:[])=>{
-        console.log("event items", items)
+    const todaysDate = moment().format('YYYY-MM-DD');
 
-        this.events = items.map((item:RawEvent)=> {
-          return {
-            name:item.name,
-            description:[item.description],
-            picture:formatImgUrl(item.pictureUrl),
-            embeded: (item.hasOwnProperty("embededLink")) ? item.embeded : null,
-            date:item.date,
-            time:(item.hasOwnProperty("time")) ? item.time : null,
-            raindate:(item.hasOwnProperty("raindate")) ? item.raindate : null,
+    this.events = jsonEvents.map((item: RawEvent) => {
+      return {
+        name: item.name,
+        description: [item.description],
+        picture: formatImgUrl(item.pictureUrl),
+        embeded: (item.hasOwnProperty('embededLink')) ? item.embeded : null,
+        date: item.date,
+        time: (item.hasOwnProperty('time')) ? item.time : null,
+        raindate: (item.hasOwnProperty('raindate')) ? item.raindate : null,
+      };
+    })
+      .filter(value => {
+        let show = true;
+        if (value.raindate){
+          const rainDate = moment(value.raindate).add(1, 'day').format('YYYY-MM-DD');
+          show = (rainDate >= todaysDate);
         }
-        })
-        .filter(value=>{
-          let show = true;
-          if(value.raindate){
-            const rainDate = moment(value.raindate).add(1, 'day').format("YYYY-MM-DD");
-            show = (rainDate >= todaysDate)
-          }
-          else{
-            const eventDate = moment(value.date).add(1, 'day').format("YYYY-MM-DD");
-            show = (eventDate >= todaysDate)
-          }
-          console.log(value, show)
-          return show;
-        });
-    });
+        else{
+          const eventDate = moment(value.date).add(1, 'day').format('YYYY-MM-DD');
+          show = (eventDate >= todaysDate);
+        }
+        console.log(value, show);
+        return show;
+      });
+  }
 
-    this.sheetService.getItems(2);
+  ngOnDestroy(): void {
+    this.itemSubscription.unsubscribe();
+  }
+
+  formatDate(date: string){
+    return moment(date).format('dddd, MMMM Do, YYYY');
+  }
+
+  oldSheetsLogic(){
+
+    return true;
+    /*this.itemSubscription = this.sheetService.getSheetListener()
+   .subscribe((items:[])=>{
+       console.log("event items", items)
+
+       this.events = items.map((item:RawEvent)=> {
+         return {
+           name:item.name,
+           description:[item.description],
+           picture:formatImgUrl(item.pictureUrl),
+           embeded: (item.hasOwnProperty("embededLink")) ? item.embeded : null,
+           date:item.date,
+           time:(item.hasOwnProperty("time")) ? item.time : null,
+           raindate:(item.hasOwnProperty("raindate")) ? item.raindate : null,
+       }
+       })
+       .filter(value=>{
+         let show = true;
+         if(value.raindate){
+           const rainDate = moment(value.raindate).add(1, 'day').format("YYYY-MM-DD");
+           show = (rainDate >= todaysDate)
+         }
+         else{
+           const eventDate = moment(value.date).add(1, 'day').format("YYYY-MM-DD");
+           show = (eventDate >= todaysDate)
+         }
+         console.log(value, show)
+         return show;
+       });
+   });*/
+
+    /*this.sheetService.getItems(2);
 
     this.events.filter(value=>{
       let show = true;
@@ -66,17 +106,7 @@ export class EventsComponent implements OnInit, OnDestroy {
       }
       console.log(value, show)
       return show;
-    })
-
-    console.log("events", this.events);
-  }
-
-  ngOnDestroy():void {
-    this.itemSubscription.unsubscribe();
-  }
-
-  formatDate(date:string){
-    return moment(date).format('dddd, MMMM Do, YYYY');
+    })*/
   }
 
 }

@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { sheetService } from '../services/sheetService';
 import {formatImgUrl, formatImgUrl2} from '../services/helpers';
+import jsonStaff from '../../assets/data/staff.json';
 
 export interface RawStaff {
   Name:string,
@@ -25,23 +26,15 @@ export class StaffComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
 
-    this.staffSubscription = this.sheetService.getStaffListener()
-    .subscribe((items:[])=>{
-
-
-        this.staff = items.map((item:RawStaff)=> {
-          return {
-            name:item.Name,
-            description:item.Description,
-            picture:formatImgUrl2(item.pictureUrl),
-            email:item.Email,
-            title:item.Title
-        }
-        });
-        console.log("staff items", this.staff)
+    this.staff = jsonStaff.map((item:RawStaff)=> {
+      return {
+        name:item.Name,
+        description:item.Description,
+        picture:formatImgUrl2(item.pictureUrl),
+        email:item.Email,
+        title:item.Title
+      }
     });
-
-    this.sheetService.getStaff();
   }
 
   ngOnDestroy():void {
