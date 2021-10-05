@@ -18,9 +18,9 @@ export class JobsComponent implements OnInit {
   ngOnInit(): void {
     this.jobs = [
       {
-        title: "Director of Youth Ministries",
+        title: "Nursery Worker",
         description:["job 1"],
-        link:"https://drive.google.com/file/d/1l3BqH8XInf7lM1wbY5KyaWzBMnCODxQF/view?usp=sharing",
+        link:"https://docs.google.com/document/d/18UL01Yy3XLiufaWYFHAyaY-IDI0yT2TD/edit?usp=sharing&ouid=107893894532998854003&rtpof=true&sd=true",
       }
     ]
   }
