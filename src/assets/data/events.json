@@ -14,5 +14,45 @@
     "time": "8:30am - 11:30 am",
     "pictureUrl": "https://drive.google.com/file/d/1Gcrxi3wqBtKqckn0K5UW1-mce4yqIWOW/view",
     "description": "<div><h2 class=\"card-title\">Car Cruise-In</h2><p><span style=\"color: #ff0000;\"><strong>September 18th 8:30 am - 11:30 am</strong></span></p></div><p>Details: All vehicals, Corvettes, Mustanfs, Classic Cars, Pickups, Motorcycles, Tuners, Street Rods &amp; Customs</p><p>Food Available for purchase: Country ham sicuits, sausage biscuits, coffee juice</p><p><strong>No entry fee!</strong></p><p><strong>**** Door Prizes, Cash Awards, Music ****</strong></p>"
+  },
+  {
+    "name": "Christmas Cantata",
+    "date": "2021-12-5",
+    "raindate": "2021-12-5",
+    "time": "4:00 pm",
+    "pictureUrl": "https://drive.google.com/file/d/1SCc7qBVvIBWaGUqq6AA6HVPVRy9GIwWk/view",
+    "description": "<div><h2 class=\"card-title\">Christmas Cantata</h2><p><span style=\"color: #ff0000;\"><strong>December 5th 4:00 pm</strong></span></p></div>"
+  },
+  {
+    "name": "Journey to Bethlehem",
+    "date": "2021-12-12",
+    "raindate": "2021-12-5",
+    "time": "2:00pm - 4:00 pm",
+    "pictureUrl": "https://drive.google.com/file/d/1SCc7qBVvIBWaGUqq6AA6HVPVRy9GIwWk/view",
+    "description": "<div><h2 class=\"card-title\">Journey to Bethlehem</h2><p><span style=\"color: #ff0000;\"><strong>December 12th 2:00 -4:00 pm</strong></span></p></div>"
+  },
+  {
+    "name": "Stonewall Brigade Band Christmas",
+    "date": "2021-12-13",
+    "raindate": "2021-12-13",
+    "time": "6:30 pm",
+    "pictureUrl": "https://drive.google.com/file/d/1SCc7qBVvIBWaGUqq6AA6HVPVRy9GIwWk/view",
+    "description": "<div><h2 class=\"card-title\">Stonewall Brigade Band Christmas</h2><p><span style=\"color: #ff0000;\"><strong>December 12th 6:30 pm</strong></span></p></div>"
+  },
+  {
+    "name": "Christmas Eve Service",
+    "date": "2021-12-24",
+    "raindate": "2021-12-24",
+    "time": "5:00 pm",
+    "pictureUrl": "https://drive.google.com/file/d/1SCc7qBVvIBWaGUqq6AA6HVPVRy9GIwWk/view",
+    "description": "<div><h2 class=\"card-title\">Christmas Eve Service</h2><p><span style=\"color: #ff0000;\"><strong>December 24th 5:00 pm</strong></span></p></div>"
+  },
+  {
+    "name": "Blessing of the Toys",
+    "date": "2021-12-26",
+    "raindate": "2021-12-26",
+    "time": "10:00 Am",
+    "pictureUrl": "https://drive.google.com/file/d/1SCc7qBVvIBWaGUqq6AA6HVPVRy9GIwWk/view",
+    "description": "<div><h2 class=\"card-title\">Blessing of the Toys</h2><p><span style=\"color: #ff0000;\"><strong>December 26th 10:00 Am</strong></span></p></div>"
   }
 ]
