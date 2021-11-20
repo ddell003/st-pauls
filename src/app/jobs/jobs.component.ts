@@ -17,11 +17,11 @@ export class JobsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobs = [
-      {
-        title: "Nursery Worker",
-        description:["job 1"],
-        link:"https://docs.google.com/document/d/18UL01Yy3XLiufaWYFHAyaY-IDI0yT2TD/edit?usp=sharing&ouid=107893894532998854003&rtpof=true&sd=true",
-      }
+      // {
+      //   title: "Nursery Worker",
+      //   description:["job 1"],
+      //   link:"https://docs.google.com/document/d/18UL01Yy3XLiufaWYFHAyaY-IDI0yT2TD/edit?usp=sharing&ouid=107893894532998854003&rtpof=true&sd=true",
+      // }
     ]
   }
 
