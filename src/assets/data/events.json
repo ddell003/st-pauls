@@ -48,27 +48,12 @@
     "description": "<div><h2 class=\"card-title\">Christmas Eve Service</h2><p><span style=\"color: #ff0000;\"><strong>December 24th 5:00 pm</strong></span></p></div>"
   },
   {
-    "name": "Candlemas Christmas Party",
-    "date": "2022-02-02",
-    "raindate": "22022-02-04",
-    "time": "5:30 Pm",
-    "pictureUrl": "https://drive.google.com/file/d/1jL3OsA7j3Ls4cJGXnBSXw1_V9DTQLTmN/view",
-    "description": "<p><strong>Candlemas Christmas Party</strong></p><p>&nbsp;</p><p><strong>Wednesday, February 2nd 5:30p FLC</strong></p><p>&nbsp;</p><p>Join us as we come together for our church family Christmas Party</p><p>&nbsp;</p><p>RSVP By January 31th to the Church Office</p><p>&nbsp;</p><p>Bring your favorite potluck side dish</p><p>Ugly Sweater Contest with prizes</p>"
-  },
-  {
     "name": "Annual Soup Sale",
     "date": "2022-02-27",
     "raindate": "2022-02-27",
     "time": "5:30 Pm",
     "pictureUrl": "hhttps://drive.google.com/file/d/1AxIKsi_LANfk4KuXVHetaURlpx7dNzRH/view",
     "description": "<p><strong>Annual Soup Sale</strong></p><p>&nbsp;</p><p><strong>Sunday:&nbsp;</strong></p><p>Jan 23th</p><p>Feb 13</p><p>Feb 27th</p>"
-  },
-  {
-    "name": "Captain George's Seafood",
-    "date": "2022-02-04",
-    "raindate": "2022-02-19",
-    "time": "1:30 Pm",
-    "pictureUrl": "https://drive.google.com/file/d/19FCoENA46ydkTwqds2iBAl--3FSydvQC/view",
-    "description": "<p><strong>Captain George's Seafood</strong></p><p>&nbsp;</p><p><strong>Day Trip: Saturday, February 19th&nbsp;</strong></p><p>&nbsp;</p><p>RSVP By February 4th to the Church Office</p><p>&nbsp;</p><p>We will leave St. Paul's at 1:30 Pm and ride in the church van to Williamsburg VA to eat at Captain George's Seafood Buffet</p><p>&nbsp;</p><p>We ask that participants pay for their own meal and $15 to the church to go towards&nbsp; gas and maintenance of the church van</p>"
   }
+
 ]
