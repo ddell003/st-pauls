@@ -20,7 +20,6 @@ export class YtVideosComponent implements OnInit {
 
     this.videoSubscription = this.videoService.getVideoListener()
     .subscribe((videos:[])=>{
-        console.log("videos", videos)
         this.videos = videos;
     });
     this.videoService.getVideos();

@@ -1,9 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import { Subscription } from 'rxjs';
-import { sheetService } from '../services/sheetService';
 import {formatImgUrl} from '../services/helpers';
-import { Event, RawEvent } from './event.model';
+import { RawEvent } from './event.model';
 // @ts-ignore
 import jsonEvents from '../../assets/data/events.json';
 
@@ -21,8 +20,6 @@ export class EventsComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('new events', jsonEvents);
-
     const todaysDate = moment().format('YYYY-MM-DD');
 
     this.events = jsonEvents.map((item: RawEvent) => {
@@ -46,13 +43,15 @@ export class EventsComponent implements OnInit, OnDestroy {
           const eventDate = moment(value.date).add(1, 'day').format('YYYY-MM-DD');
           show = (eventDate >= todaysDate);
         }
-        console.log(value, show);
         return show;
       });
   }
 
   ngOnDestroy(): void {
-    this.itemSubscription.unsubscribe();
+    if(this.itemSubscription){
+      this.itemSubscription.unsubscribe();
+    }
+
   }
 
   formatDate(date: string){

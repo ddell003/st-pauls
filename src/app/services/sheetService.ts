@@ -77,19 +77,18 @@ export class sheetService {
   getBulletin(){
     const sheetNumber = 3
     const url = `https://spreadsheets.google.com/feeds/cells/1haU9CTvqVnhg8rSwn2q83O7KJWl_KG2ccL_dF1fW8xI/${sheetNumber}/public/values?alt=json-in-script`;
-    this.http.get(url, {responseType: 'text'})
-      .subscribe((body)=> {
-        const formattedText = body
-          .replace('gdata.io.handleScriptLoaded(', '')
-          .slice(0, -2);
-          const data = JSON.parse(formattedText)
-          this.bulletins = processGSheetResults(data).reverse();
-          this.bullitensLoaded.next([...this.bulletins]);
-          console.log(this.bulletins)
-      },
-      error => {
-        console.log("error", error)
-      },);
+    // this.http.get(url, {responseType: 'text'})
+    //   .subscribe((body)=> {
+    //     const formattedText = body
+    //       .replace('gdata.io.handleScriptLoaded(', '')
+    //       .slice(0, -2);
+    //       const data = JSON.parse(formattedText)
+    //       this.bulletins = processGSheetResults(data).reverse();
+    //       this.bullitensLoaded.next([...this.bulletins]);
+    //   },
+    //   error => {
+    //     console.log("error", error)
+    //   },);
   }
 
   getNews(){

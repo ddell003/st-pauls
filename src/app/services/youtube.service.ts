@@ -27,15 +27,10 @@ export class YoutubeService {
   }
 
   getUrl(url){
-    console.log(url);
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-
   }
 
   getVideos(){
-    console.log("in the youtube service");
-
-
     this.http.get(this.url, {responseType: 'text'})
       .subscribe((body)=> {
         const formattedText = body
@@ -59,9 +54,6 @@ export class YoutubeService {
 
             this.videos.push(newVideo);
         }
-
-
-          console.log("youtube service", this.videos)
           this.videosLoaded.next([...this.videos]);
       },
       error => {
